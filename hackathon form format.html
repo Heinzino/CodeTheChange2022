@@ -5,11 +5,11 @@
 
 <title>Helping those in need</title>
 
-<h1 style="color:red; text-align:center; font-style:Times New Roman"> Form(placeholder) </h1><hr>
+<h1 style="color:red; text-align:center; font-style:Times New Roman"> Helping those in need </h1><hr>
 <form action="results.html" method="GET" enctype="multipart/form-data" style="color:yellow;" align="left">
 
     <div>
-      <label for="name">Name</label>
+      <label for="country">country</label>
       <input type="text" name="name" id="name" required>
   </div><br>
   <div>
@@ -21,22 +21,34 @@
     <input type="number" name="age" id="age" min="1" max="200" step="5">
   </div><br>
   <div>
-    <label for="date">Birth date</label>
+    <label for="date">Birth date:</label>
     <input type="date" name="date" id="date" min="2019-06-10">
   </div><br>
   <div>
-    <b style="color:yellow;">Favorite Food</b>
+    <b style="color:yellow;">Ethnicity:</b>
     <div>
-      <label for="banana">Banana</label>
-      <input type="checkbox" name="banana" id="banana">
+      <label for="White">White:</label>
+      <input type="checkbox" name="white" id="white">
     </div><br>
     <div>
-      <label for="apple">Apple</label>
-      <input type="checkbox" name="apple" id="apple">
+      <label for="Black">Black:</label>
+      <input type="checkbox" name="black" id="black">
+    </div><br>
+	    <div>
+      <label for="Asian">Asian:</label>
+      <input type="checkbox" name="asian" id="asian">
+    </div><br>
+	    <div>
+      <label for="Hispanic">Hispanic:</label>
+      <input type="checkbox" name="Hispanic" id="Hispanic">
+    </div><br>
+	    <div>
+      <label for="Other">Other:</label>
+      <input type="checkbox" name="Other" id="Other">
     </div><br>
   </div>
   <div>
-    <b style="color:yellow;">Gender</b>
+    <b style="color:yellow;">Sex:</b>
     <div>
       <label for="male">Male</label>
       <input type="radio" name="gender" id="male" value="male">
@@ -46,6 +58,11 @@
       <input type="radio" name="gender" id="female" value="female">
     </div><br>
 	    <div>
+	    <div>
+      <label for="non-binary">non-binary</label>
+      <input type="radio" name="gender" id="male" value="male">
+    </div><br>
+    <div>	
       <label for="other">Other</label>
       <input type="radio" name="gender" id="other" value="other">
     </div><br>
@@ -69,22 +86,12 @@
     <input id="file" type="file" name="file">
   </div><br>
   <div>
-    <label for="phone">Phone</label>
-    <input type="tel" name="phone" id="phone">
+    <label for="City">City</label>
+    <input type="text" name="City" id="City">
   </div><br>
-  <div>
-    <label for="url">URL</label>
-    <input type="url" name="url" id="url">
-  </div><br>
-  <div>
-    <label for="color">Color</label>
-    <input type="color" name="color" id="color">
-  </div><br>
-  <div>
-    <label>
-      Password
-      <input type="password" name="password" required>
-    </label>
+  
+    <label for="color">Favorite Color</label>
+    <input type="color" name="Favorite color" id="Favorite color">
   </div><br>
   <button type="reset">Reset</button>
   <button type="submit">Submit</button>

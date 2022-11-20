@@ -9,3 +9,7 @@ def layout():
 @app.route("/research", methods=["GET","POST"])
 def research():
     return render_template("research.html")
+
+@app.route("/form", methods=["GET","POST"])
+def form():
+    return render_template("form.html")

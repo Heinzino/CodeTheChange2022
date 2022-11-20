@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body style= "background-color:grey;">
+
+<title>Helping those in need</title>
+
+<h1 style="color:blue; text-align:center; font-style:Times New Roman"> Helping those in need </h1><hr>
+<form action="results.html" method="GET" enctype="multipart/form-data" style="color:white;" align="left">
+
+    <div>
+      <label style="font-size:30px" for="country">country</label>
+      <input type="text" name="name" id="name" required>
+  </div><br>
+  <div>
+    <label style="font-size:30px" for="email">Email</label>
+    <input type="email" name="email" id="email" required>
+  </div><br>
+  <div>
+    <label style="font-size:30px" for="age">Age</label>
+    <input type="number" name="age" id="age" min="1" max="200" step="5">
+  </div><br>
+  <div>
+    <label style="font-size:30px" for="date">Birth date:</label>
+    <input type="date" name="date" id="date" min="2019-06-10">
+  </div><br>
+  <div>
+    <b style="font-size:30px">Ethnicity:</b>
+    <div><br>
+      <label for="White">White:</label>
+      <input type="checkbox" name="white" id="white">
+    </div><br>
+    <div>
+      <label for="Black">Black:</label>
+      <input type="checkbox" name="black" id="black">
+    </div><br>
+	    <div>
+      <label for="Asian">Asian:</label>
+      <input type="checkbox" name="asian" id="asian">
+    </div><br>
+	    <div>
+      <label for="Hispanic">Hispanic:</label>
+      <input type="checkbox" name="Hispanic" id="Hispanic">
+    </div><br>
+	    <div>
+      <label for="Other">Other:</label>
+      <input type="checkbox" name="Other" id="Other">
+    </div><br>
+  </div>
+  <div>
+    <b style="font-size:30px">Sex:</b>
+    <div><br>
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" value="male">
+    </div><br>
+    <div>
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" value="female">
+    </div><br>
+	    <div>
+	    <div>
+      <label for="non-binary">non-binary</label>
+      <input type="radio" name="gender" id="male" value="male">
+    </div><br>
+    <div>	
+      <label for="other">Other</label>
+      <input type="radio" name="gender" id="other" value="other">
+    </div><br>
+  </div>
+  <div>
+    <label style="font-size:30px" for="eyeColor">Eye Color</label>
+    <select name="eyeColor" id="eyeColor" multiple>
+	  <option value="brown">Brown</option>
+	  <option value="blue">Blue</option> 	
+      <option value="Green">Green</option>
+      <option value="Red">Red</option>
+	  <option value="Other">Other</option>
+    </select>
+  </div><br>
+  <div>
+    <label style="font-size:30px" for="bio">Bio</label>
+    <textarea id="bio" name="bio"></textarea>
+  </div><br>
+  <input type="hidden" name="hidden" value="hi">
+  <div>
+    <label style="font-size:30px" for="file">File</label>
+    <input id="file" type="file" name="file">
+  </div><br>
+  <div>
+    <label style="font-size:30px" for="City">City</label>
+    <input type="text" name="City" id="City">
+  </div><br>
+  
+    <label style="font-size:30px" for="color">Favorite Color</label>
+    <input type="color" name="Favorite color" id="Favorite color">
+  </div><br>
+  <button type="reset">Reset</button>
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>

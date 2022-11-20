@@ -1,32 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<link href="/static/styles.css" rel="stylesheet">
-<title>CSS Template</title>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
+li 
+{ 
+  display: inline-block; 
+  zoom: 1;
+  *display: inline;
+}
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100;}
+.bgimg {
+  background-image: url('../static/images/nepal.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
 
 </style>
 </head>
 <body>
-
-
-        <nav class="bg-light border navbar navbar-expand-md navbar-light">
+    <nav class="bg-light border navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbar">
-                  
                         <ul class="navbar-nav me-auto mt-2">
+                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="/form">Form</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/research">Research</a></li>
                             <li class="nav-item"><a class="nav-link" href="/research">Resources</a></li>
                         </ul>
                 </div>
             </div>
         </nav>
 
-    
 
+{% block main %}
+
+{% endblock %}
+</div>
 </body>
 </html>
 

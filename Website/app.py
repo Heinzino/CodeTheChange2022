@@ -13,12 +13,20 @@ def resources():
 
     with open("results.csv", "r") as file:
         reader = csv.reader(file)
-        data = file.readlines()
+        data = []
+        for x in reader:
+            if x != []:
+                data.append(x)
+        
         most_recent = data[-1]
-        resource_sites = most_recent
-       
+        print(most_recent)
+        country = most_recent[0]
+        city = most_recent[2]
+        
+        resource_sites =datafinder(country=country,city= city,num =1)
+        #resource_sites = [data,[most_recent],[],[],[],[],[],[]]
 
-    return render_template("resources.html", resource_list= resource_sites)
+    return render_template("resources.html", resource_list = resource_sites)
 
 @app.route("/form", methods=["GET","POST"])
 def form():
@@ -44,5 +52,4 @@ def results():
             writer.writerow(data)
         
         return render_template("results.html")
-
 

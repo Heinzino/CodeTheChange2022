@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect
 import csv
+from search import datafinder
 
 app = Flask(__name__)
 
@@ -7,9 +8,19 @@ app = Flask(__name__)
 def layout():
     return render_template("home.html")
 
-@app.route("/research", methods=["GET","POST"])
+@app.route("/resources", methods=["GET","POST"])
 def resources():
-    return render_template("resources.html")
+
+    with open("results.csv", "r") as file:
+        reader = csv.reader(file)
+        data = file.readlines()
+        most_recent = data[-1]
+        country = most_recent[0]
+        city = most_recent[2]
+
+        resource_sites = datafinder(country, city, 7)
+
+    return render_template("resources.html", resource_list= resource_sites)
 
 @app.route("/form", methods=["GET","POST"])
 def form():
@@ -31,4 +42,5 @@ def results():
             writer.writerow(data)
         
         return render_template("results.html")
+
 

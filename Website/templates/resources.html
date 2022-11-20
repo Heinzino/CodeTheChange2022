@@ -5,9 +5,41 @@
 {% endblock %}
 
 {% block main %}
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">BOMBOCLAAT</p>
-  </div>
-{% endblock %}% extends "layout.html" %}
+<header>Resources</header>
+
+<body>
+ 
+  <h1>General Resources</h1>
+  <div>Foodbanks</div>
+  <li>{% for foodbank in resource_list[0] %</li>
+  {% endfor %}
+  <div>Charities</div>
+  <li>{% for charities in resource_list[1] %</li>
+  {% endfor %}
+  
+  <h1>Job Resources</h1>
+  <div>Job Postings</div>
+  <li>{% for job_postings in resource_list[2] %</li>
+  {% endfor %}
+  <div>Career Workshops</div>
+  <li>{% for career_workshops in resource_list[3] %</li>
+  {% endfor %}
+  
+  <h1>Acadameic Resources</h1>
+  <div>Scholarships</div>
+  <li>{% for Scholarships in resource_list[4] %</li>
+  {% endfor %}
+  <div>Tutoring Workshops</div>
+  <li>{% for tutoring_workshops in resource_list[5] %</li>
+  {% endfor %}
+  
+  <h1>Mental Health Resources</h1>
+  <div>Mental Health Resources/div>
+  <li>{% for mental_health_resources in resource_list[6] %</li>
+  {% endfor %}
+  <div>Suicide Hotline</div>
+  <li>{% for suicide_hotline in resource_list[7] %</li>
+  {% endfor %}
+
+</body>
+{% endblock %}

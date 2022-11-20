@@ -24,6 +24,10 @@ def resources():
 def form():
         return render_template("form.html")
 
+@app.route('/research', methods=["GET","POST"])
+def research():
+    return render_template("research.html")
+
 @app.route("/results", methods=["POST"])
 def results():
 

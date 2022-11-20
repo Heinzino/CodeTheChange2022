@@ -6,19 +6,29 @@ except ImportError:
 
 """
 general resources:
-List 1: food banks
-List 2: Charities 
+List 0: food banks
+List 1: Charities 
 
-List 3: job postings in the area
-List 4: career workshops in the area
+Job resources:
+List 2: job postings in the area
+List 3: career workshops in the area
 
 academic resources:
-List 5:scholarships and bursaries in that area
-List 6:tutoring workshops and studying workshops
+List 4:scholarships and bursaries in that area
+List 5:tutoring workshops and studying workshops
 
 mental health resources:
-List 7:Mental heath support in area
-List 8:suicide helpline in the area
+List 6:Mental heath support in area
+List 7:suicide helpline in the area
+
+
+Input: 
+    country: country of the user
+    city:city of user
+    num: number of links output per query
+Outputs:
+    A list of lists.
+    Content of each list is as above
 """
 
 def datafinder(country,city,num):
@@ -41,9 +51,3 @@ def datafinder(country,city,num):
         listsOfSite.append(tempList)
     return listsOfSite
 
-    
-data = datafinder("canada","calgary",3)
-
-for x in data:
-    print(x)
-    print("------------------------------------")

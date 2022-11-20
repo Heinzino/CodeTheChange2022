@@ -15,10 +15,8 @@ def resources():
         reader = csv.reader(file)
         data = file.readlines()
         most_recent = data[-1]
-        country = most_recent[0]
-        city = most_recent[2]
-
-        resource_sites = datafinder(country, city, 7)
+        resource_sites = most_recent
+       
 
     return render_template("resources.html", resource_list= resource_sites)
 

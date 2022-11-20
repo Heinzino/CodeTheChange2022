@@ -9,48 +9,51 @@
 <body>
  
   <h1>General Resources</h1>
-  <div>Foodbanks</div>
+  <div><h3>Foodbanks</h3></div>
   <li>{% for foodbank in resource_list[0] %}</li>
-  <li>{{ foodbank}}</li>
+  <li><a href={{ foodbank }}>{{ foodbank}}</a></li>
   {% endfor %}
-  <div>Charities</div>
+  <div><h3>Charities</div>
   <li>{% for charities in resource_list[1] %}</li>
-    <li>{{ charities}}</li>
+    <li><a href={{ charities }}>{{ charities}}</a></li>
   {% endfor %}
   
 
   <h1>Job Resources</h1>
-  <section>Job Postings
+  <section><h3>Job Postings</h3>
     <div><li>{% for job_postings in resource_list[2] %}</li></div>
-      <li>{{ job_postings}}</li>
+      <li><a href = {{ job_postings }}>{{ job_postings}}</a></li>
     {% endfor %}
-    <div>Career Workshops</div>
+    <div><h3>Career Workshops</h3></div>
     <div><li>{% for career_workshops in resource_list[3] %}</li></div>
-      <li>{{ career_workshops}}</li>
+      <li><a href={{ career_workshops }}>{{career_workshops}}</a></li>
     {% endfor %}
   </section>
   
   <h1>Acadameic Resources</h1>
-  <section>Scholarships
+  <section><h3>Scholarships</h3>
   <div><li>{% for Scholarships in resource_list[4] %}</li></div>
-    <li>{{ Scholarships}}</li>
+    <li><a href={{ Scholarships }}>{{ Scholarships}}</a></li>
   {% endfor %}
-  <div>Tutoring Workshops</div>
+  <div><h3>Tutoring Workshops</h3></div>
   <div><li>{% for tutoring_workshops in resource_list[5] %}</li></div>
-    <li>{{ tutoring_workshops}}</li>
+    <li><a href={{ tutoring_workshops}}>{{ tutoring_workshops}}</a></li>
   {% endfor %}
   </section>
   
   <h1>Mental Health Resources</h1>
-  <section>Mental Health Resources
+  <section><h3>Mental Health Resources</h3>
   <div><li>{% for mental_health_resources in resource_list[6] %}</li></div>
-    <li>{{ mental_health_resources}}</li>
+    <li><a href={{ mental_health_resources }}>{{ mental_health_resources}}</a></li>
   {% endfor %}
-  <div>Suicide Hotline</div>
+  <div><h3>Suicide Hotline</h3></div>
   <div><li>{% for suicide_hotline in resource_list[7] %}</li></div>
-    <li>{{ suicide_hotline}}</li>
+    <li><a href={{ suicide_hotline }}>{{ suicide_hotline}}</a></li>
   {% endfor %}
   </section>
 
 </body>
+<footer>
+  <div></div>
+</footer>
 {% endblock %}
